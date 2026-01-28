@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Notes - Operators to OOPS</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h1,h2{
+            text-align: center;
+            color: #333;
+        }
+        h3{
+            color: #0057b7;
+        }
+        pre{
+            background-color: #222;
+            color: #0f0;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        hr{
+            margin: 25px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🐍 Python Basics → OOPS</h1>
+
+<hr>
+
+<h2>1. Operators</h2>
+
+<h3>Arithmetic Operators</h3>
+<p>Used for mathematical operations.</p>
+<pre>
+a = 10
+b = 3
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)
+</pre>
+
+<h3>Relational Operators</h3>
+<p>Used to compare values (True / False).</p>
+<pre>
+x = 5
+y = 10
+print(x < y)
+print(x == y)
+print(x != y)
+</pre>
+
+<h3>Logical Operators</h3>
+<pre>
+a = 10
+b = 5
+print(a > b and b > 0)
+print(a < b or b > 0)
+print(not(a > b))
+</pre>
+
+<h3>Assignment Operators</h3>
+<pre>
+a = 10
+a += 5
+print(a)
+</pre>
+
+<hr>
+
+<h2>2. Data Types</h2>
+
+<h3>Primitive Data Types</h3>
+<ul>
+    <li>Integer</li>
+    <li>Float</li>
+    <li>String</li>
+    <li>Boolean</li>
+</ul>
+
+<pre>
+a = 10
+b = 2.5
+c = "Python"
+d = True
+print(type(a), type(b), type(c), type(d))
+</pre>
+
+<h3>Non-Primitive Data Types</h3>
+
+<h4>List</h4>
+<pre>
+nums = [1, 2, 3]
+nums.append(4)
+print(nums)
+</pre>
+
+<h4>Tuple</h4>
+<pre>
+t = (10, 20, 30)
+print(t)
+</pre>
+
+<h4>Set</h4>
+<pre>
+s = {1, 2, 2, 3}
+print(s)
+</pre>
+
+<h4>Dictionary</h4>
+<pre>
+student = {"name": "Pavan", "age": 21}
+print(student["name"])
+</pre>
+
+<hr>
+
+<h2>3. Conditional Statements</h2>
+
+<h3>if</h3>
+<pre>
+age = 18
+if age >= 18:
+    print("Eligible to vote")
+</pre>
+
+<h3>if-else</h3>
+<pre>
+num = 5
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+</pre>
+
+<h3>if-elif-else</h3>
+<pre>
+marks = 85
+if marks >= 90:
+    print("A Grade")
+elif marks >= 75:
+    print("B Grade")
+else:
+    print("C Grade")
+</pre>
+
+<h3>Ternary Operator</h3>
+<pre>
+a = 10
+b = 20
+print("a is big" if a > b else "b is big")
+</pre>
+
+<hr>
+
+<h2>4. Loops</h2>
+
+<h3>for Loop</h3>
+<pre>
+for i in range(1, 6):
+    print(i)
+</pre>
+
+<h3>while Loop</h3>
+<pre>
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+</pre>
+
+<hr>
+
+<h2>5. Functions</h2>
+
+<pre>
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+</pre>
+
+<hr>
+
+<h2>6. OOPS (Object Oriented Programming)</h2>
+
+<h3>Class & Object</h3>
+<pre>
+class Student:
+    def show(self):
+        print("Student class")
+
+s = Student()
+s.show()
+</pre>
+
+<h3>Constructor</h3>
+<pre>
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print(self.name, self.age)
+
+s = Student("Pavan", 21)
+s.display()
+</pre>
+
+<h3>Inheritance</h3>
+<pre>
+class Parent:
+    def show(self):
+        print("Parent class")
+
+class Child(Parent):
+    def display(self):
+        print("Child class")
+
+c = Child()
+c.show()
+c.display()
+</pre>
+
+<h3>Polymorphism</h3>
+<pre>
+class A:
+    def show(self):
+        print("Class A")
+
+class B:
+    def show(self):
+        print("Class B")
+
+A().show()
+B().show()
+</pre>
+
+<h3>Encapsulation</h3>
+<pre>
+class Bank:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def show(self):
+        print(self.__balance)
+
+b = Bank(5000)
+b.show()
+</pre>
+
+<h3>Abstraction</h3>
+<pre>
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(Shape):
+    def area(self):
+        print("Square Area")
+
+Square().area()
+</pre>
+
+<hr>
+
+<h2 style="text-align:center;">✅ END</h2>
+<h2 style="margin: 0;">PAVAN BHAGI</h2>    
+</div>
+
+
+</body>
+</html>
